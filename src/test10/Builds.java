@@ -66,7 +66,7 @@ public class Builds {
             try {
                 command = Integer.parseInt(line);
             } 
-            catch (Exception e) {
+            catch (NumberFormatException e) {
         }
             
             switch(command) {
@@ -97,9 +97,10 @@ public class Builds {
                     break;
             default:
             System.out.println("Error Choose from (1-6) ...");
-        }  
+        }       
     }
    }
+    
     //method to set the basic data
     private void data(){
         
