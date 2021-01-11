@@ -11,7 +11,7 @@ public abstract class Components {
         name = new ArrayList<>();
         price = new ArrayList<>();
     }
-    
+
     public ArrayList<Double> getPrice() {
         return price;
     }

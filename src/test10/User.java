@@ -29,7 +29,7 @@ public class User implements Login {
         System.out.println("Enter Payment: ");
             
         System.out.println("Card Nunber: ");
-        int card_num = input.nextInt();
+        long card_num = input.nextInt();
         System.out.println("Month: ");
         int n = input.nextInt();
         System.out.println("Year: ");            

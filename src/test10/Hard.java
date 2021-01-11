@@ -10,7 +10,8 @@ public class Hard extends Components {
         capacity = new ArrayList<>();
         capacity.add(1024);
         capacity.add(2048);
-        capacity.add(4072);        
+        capacity.add(4072); 
+        //super.getPrice();
     }
     
     public ArrayList<Integer> getCapacity() {

@@ -93,7 +93,8 @@ public class Builds {
                     break;
                 case 8:
                     System.out.println("Exiting ...");
-                    System.exit(0);                    
+                    clear();
+                    System.exit(0);
                     break;
             default:
             System.out.println("Error Choose from (1-6) ...");
@@ -273,6 +274,7 @@ public class Builds {
         //user data
         if (state == 'y'){
             u.user_data();
+            clear();
         }
         else {
             System.out.println("Choose Again ...");
@@ -288,6 +290,30 @@ public class Builds {
         System.out.println("Ram Safe Temperature: "+ r.heat() +" Degrees Celsius");
         System.out.println("Hard Safe Temperature: "+ h.heat() +" Degrees Celsius");
         
+    }
+    
+    //to clear garbage value
+    private void clear(){
+        
+        p.getCore().clear();
+        p.getName().clear();
+        p.getPrice().clear();
+            
+        g.getVRAM().clear();
+        g.getName().clear();
+        g.getPrice().clear();
+            
+        m.getName().clear();
+        m.getPrice().clear();
+            
+        r.getCapacity().clear();
+        r.getFrequency().clear();
+        r.getName().clear();
+        r.getPrice().clear();
+            
+        h.getCapacity().clear();
+        h.getName().clear();
+        h.getPrice().clear();
     }
     
 }
